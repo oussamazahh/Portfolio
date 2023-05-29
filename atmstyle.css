@@ -30,7 +30,6 @@ body {
   color: var(--color-white);
 }
 section {
-  min-height: 100vh;
   width: 100%;
   left: 0;
   top: 0;
@@ -79,15 +78,12 @@ section.container div#return a {
 }
 section.container div#return img {
   width: 50px;
-  width: 50px;
   border: 4px solid;
   border-radius: 9px;
 }
 menu{
-    display: flex;
-    position: absolute;
-    left: 121px;
-    top: 302px; 
+  display: flex;
+  margin-left: 6%;
 }
 div#img_admin {
     display: flex;
@@ -111,10 +107,8 @@ div#img_utilisa {
     flex-direction: column;
 }
 article {
-    display: flex;
-    position: absolute;
-    top: 993px;
-    left: 140px;
+  display: flex;
+  margin: 4% 1% 4% 8%;
 }
 article div{
     margin-right: 106px;
@@ -140,7 +134,7 @@ article div ul li.sans{
 @media screen and (max-width: 1250px){
 
     .container {
-        padding: 2rem 2.5rem !important;
+        padding: 1rem 1.5rem !important;
       }
       .main-title h2 {
         font-size: 2rem;
@@ -152,37 +146,49 @@ article div ul li.sans{
         font-size: 2.3rem;
       }
       section.container div#return a {
-        font-size: 13px;
+        font-size: 17px;
         flex-direction: column;
         align-items: center;
       }
       section.container div#return { 
-        top: 166px;
-        left: 45%;
+        top: 271px;
+        left: 34%;
+      }
+      section.container div#return img {
+        width: 61px;
       }
       menu{
         flex-direction: column;
-        left: 0%;
+        margin: 90px 0 0 0;
     }
     menu div#img_admin{
-        flex-direction: row;
+        flex-direction: column;
     }
     div#img_utilisa {
-        flex-direction: row;
+        flex-direction: column;
+    }
+    menu img{    
+      width: 100%;
+    }
+    menu div.vid_fram iframe {
+      width: 100%;
+      height: fit-content;
     }
     article {
-        top: 1408px;
-        flex-direction: column;
+        flex-direction: column;    
+        margin: 0;
     }
     img#spr{
         display: none;
     }
-    article div li{
-        text-align: center;
+    article div {
+      margin: 11px 10px 5px 10px
     }
-    article div li::marker{
+    article div ul li{
         text-align: center;
-    } 
+        position: relative; 
+        list-style-image: none;
+    }
     article div h2{
         margin-top: 20px;
     }
