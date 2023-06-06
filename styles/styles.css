@@ -529,7 +529,7 @@ section {
   padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
-  flex: 5;
+  flex: none;
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
@@ -634,6 +634,9 @@ section {
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+}
+a#buttn{
+  padding: 7px 10rem;;
 }
 .main-btn .btn-text {
   padding: 0 2rem;

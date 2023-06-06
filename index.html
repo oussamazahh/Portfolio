@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oussama Zahidi</title>
     <link rel="shortcut icon" href="img/82a21fd92e30c7db567b583819520427-removebg-preview.png" type="image/x-icon" 4RF>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +35,13 @@
                 <p>
                     En tant que développeur informatique, j'ai une passion pour l'innovation et la création de solutions technologiques qui répondent aux besoins des utilisateurs.
                 </p>
-                <!-- <div class="btn-con">
-                    <a href="" class="main-btn">
+                <div class="btn-con">
+                    <a href="WhatsApp Image 2023-06-04 at 16.58.57.pdf" class="main-btn">
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
-                </div> -->
+                </div>
+                <div id="WAButton"></div>
             </div>
         </div>
     </header>
@@ -45,9 +52,9 @@
             </div>
             <div class="about-container">
                 <div class="left-about">
-                    <h4>Informations à propos de moi</h4>
+                    
                     <p>
-                        Je dispose d'une solide expérience en programmation, conception de bases de données et analyse de données, ce qui me permet de travailler efficacement sur des projets complexes en équipe ou en tant que développeur autonome.<br> 
+                        Je dispose d'une solide expérience en programmation, analyse et conception de bases de données et analyse de données, ce qui me permet de travailler efficacement sur des projets complexes en équipe ou en tant que développeur autonome.<br> 
                         Mon aptitude à résoudre des problèmes et à assimiler rapidement de nouvelles connaissances m'a permis de créer des applications réussies dans divers domaines. <br>
                         Grâce à mes compétences techniques et à ma capacité d'écoute attentive, je suis en mesure d'aider mes clients à atteindre leurs objectifs en leur fournissant des solutions adaptées à leurs besoins.
                     </p>
@@ -98,7 +105,7 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">css3</p>
+                        <p class="prog-title">C</p>
                         <div class="progress-con">
                             <p class="prog-text">95%</p>
                             <div class="progress">
@@ -107,7 +114,7 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
+                        <p class="prog-title">css3</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
                             <div class="progress">
@@ -116,7 +123,7 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">PL/SQL</p>
+                        <p class="prog-title">javascript</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
                             <div class="progress">
@@ -134,11 +141,20 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">Anglais</p>
+                        <p class="prog-title">PL/SQL</p>
                         <div class="progress-con">
                             <p class="prog-text">70%</p>
                             <div class="progress">
                                 <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Réseau informatique</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="js"></span>
                             </div>
                         </div>
                     </div>
@@ -212,9 +228,9 @@
             <div class="main-title">
                 <h2>Mon <span>portefeuille</span><span class="bg-text">Mon travail</span></h2>
             </div>
-            <p class="port-text">
+            <!-- <p class="port-text">
                 Voici quelques-uns de mes travaux que j'ai effectués dans divers langages de programmation.
-            </p>
+            </p> -->
             <div class="portfolios">
                 <div class="portfolio-item">
                     <div class="image">
@@ -222,7 +238,7 @@
                     </div>
                     <a href="atm.html">
                     <div class="hover-items">
-                        <h3>Project ATM</h3>
+                        <h3>Un système <br> de gestion <br> du guichet <br>automatique <br>(ATM)</h3>
                         <div class="icons">
                             <!-- <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
@@ -243,7 +259,7 @@
                     </div>
                     <a href="Bijoux.html">
                     <div class="hover-items">
-                        <h3>Project ecommerce</h3>
+                        <h3>Site Web <br>Front-End <br>ecommerce</h3>
                         <div class="icons">
                             <!-- <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
@@ -363,7 +379,6 @@
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>CONTACTEZ MOI ici</h4>
                         
                         <div class="contact-info">
                             <div class="contact-item">
@@ -441,12 +456,11 @@
                             <div class="input-control">
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
-                            <!-- <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn" id="buttn">
+                                    <span class="btn-text">SEND</span>
                                 </a>
-                            </div> -->
+                            </div>
                         </form>
                     </div>
                 </div>
